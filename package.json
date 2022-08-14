@@ -1,7 +1,26 @@
 {
-  "name": "jigi-station-react-swipeable-cards",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@jigi-station/ts-swipeable-cards-react",
+  "version": "0.0.1",
+  "description": "타입스크립트 리엑트 스와이프 가능한 카드 컴포넌트 라이브러리입니다. 테스트 버전입니다. 아직 사용을 권고하지 않습니다. typescript react swipeable card component library. test version, do not use, not yet.",
+  "main": "dist/index.js",
+  "files": [
+    "/dist"
+  ],
+  "private": false,
+  "keywords": [
+    "react",
+    "react components",
+    "react library",
+    "typescript",
+    "swipeable",
+    "cards",
+    "swipeable cards"
+  ],
+  "author": "jigi-station",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
@@ -17,7 +36,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare-window": "rmdir /S dist && tsc",
+    "build-moudle": "tsc"
   },
   "eslintConfig": {
     "extends": [
