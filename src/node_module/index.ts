@@ -1,1 +1,0 @@
-export { SwipeCardCase } from "./lib";

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { SwipeCardCase } from "@jigi-station/ts-swipeable-cards-react";
+import { SwipeCardCase } from "./lib";
 
-import { TestCards } from "../src/components";
 const MockCardList = [
   {
     id: 0,
@@ -20,6 +19,40 @@ const MockCardList = [
     bgColor: "#00ff88",
   },
 ];
+
+interface TestCardsProps {
+  swipeCardId: string | number;
+  bgColor: string;
+}
+const TestCards: React.FC<TestCardsProps> = ({ bgColor }) => {
+  return (
+    <>
+      <div
+        style={{
+          position: "relative",
+          width: "300px",
+          height: "500px",
+          borderRadius: "20px",
+          background: bgColor,
+        }}
+      >
+        <p
+          style={{
+            position: "absolute",
+            left: "50%",
+            top: "50%",
+            transform: "translate(-50%, -50%)",
+            padding: 0,
+            margin: 0,
+            fontSize: "20px",
+          }}
+        >
+          Card
+        </p>
+      </div>
+    </>
+  );
+};
 function App() {
   const [testCardList, setTestCardList] = useState(MockCardList);
   const handleCardSwipeDone = (data) => {

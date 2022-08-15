@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 import { useCallback } from "react";
 
 // styles
-import styles from "./swipe-card-case.module.css";
 
 // components
 import { SwipeCard } from "./swipe-card.component";
@@ -500,7 +499,7 @@ const SwipeCardCase = React.forwardRef<HTMLDivElement, SwipeCardCaseProps>(
 
     return (
       <div
-        className={`swipe-card-case ${styles.CardCase} ${styles.dragLock}`}
+        className={`jigi-station swipe-card-case drag-lock`}
         ref={cardCaseElRef}
         style={{
           boxSizing: "border-box",
@@ -513,7 +512,7 @@ const SwipeCardCase = React.forwardRef<HTMLDivElement, SwipeCardCaseProps>(
         onPointerUp={onCardCaseUp}
       >
         <div
-          className={`swipe-card-container ${styles.CardContainer} ${styles.dragLock}`}
+          className={`jigi-station swipe-card-container drag-lock`}
           ref={cardContainerElRef}
           style={{
             boxSizing: "border-box",
@@ -530,7 +529,7 @@ const SwipeCardCase = React.forwardRef<HTMLDivElement, SwipeCardCaseProps>(
             const swipeCardId = props?.swipeCardId ?? key;
             return (
               <SwipeCard
-                className={`swipe-card ${styles.dragLock}`}
+                className={`jigi-station swipe-card drag-lock`}
                 ref={setStackCardsRef(childrenIndex)}
                 style={{
                   boxSizing: "border-box",

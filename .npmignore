@@ -8,7 +8,11 @@ src
 .gitignore
 tsconfig.json
 
-
+# package-test
+package-for-test.json
+package-for-publish.json
+package-test.json
+package-publish.json
 
 # GIT
 .git

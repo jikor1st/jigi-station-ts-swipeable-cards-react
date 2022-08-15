@@ -1,7 +1,5 @@
 import React, { PointerEventHandler, TransitionEventHandler } from "react";
 
-import styles from "./swipe-card-case.module.css";
-
 interface SwipeCardProps {
   className?: string;
   children: React.ReactNode;
@@ -28,7 +26,7 @@ const SwipeCard = React.forwardRef<HTMLDivElement, SwipeCardProps>(
       <div
         ref={RootRef}
         style={{ ...style }}
-        className={`${className} ${styles.CardContents}`}
+        className={`${className}`}
         onPointerDown={onPointerDown}
         onPointerMove={onPointerMove}
         onPointerUp={onPointerUp}

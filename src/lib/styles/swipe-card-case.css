@@ -1,11 +1,11 @@
-.CardCase {
+.jigi-station.swipe-card-case {
   pointer-events: auto;
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.CardContainer {
+.jigi-station.swipe-card-container {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -18,7 +18,7 @@
   height: auto;
 }
 
-.CardContents {
+.jigi-station.swipe-card {
   position: absolute;
   top: 0;
   right: 0;
@@ -35,7 +35,7 @@
   -o-transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
-.dragLock {
+.drag-lock {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;

@@ -12,6 +12,6 @@
     "noImplicitAny": true,
     "removeComments": false
   },
-  "include": ["src/node_module/**/*"],
+  "include": ["src/lib/**/*"],
   "exclude": ["node_modules"]
 }
